@@ -8,14 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		77CD62402C2F232F007B2DB3 /* Food_diaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD623F2C2F232F007B2DB3 /* Food_diaryApp.swift */; };
-		77CD62422C2F232F007B2DB3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62412C2F232F007B2DB3 /* Persistence.swift */; };
-		77CD62452C2F232F007B2DB3 /* Food_diary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62432C2F232F007B2DB3 /* Food_diary.xcdatamodeld */; };
+		77CD62422C2F232F007B2DB3 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62412C2F232F007B2DB3 /* PersistenceController.swift */; };
+		77CD62452C2F232F007B2DB3 /* FoodDiaryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62432C2F232F007B2DB3 /* FoodDiaryModel.xcdatamodeld */; };
 		77CD62472C2F232F007B2DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62462C2F232F007B2DB3 /* ContentView.swift */; };
 		77CD62492C2F2330007B2DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD62482C2F2330007B2DB3 /* Assets.xcassets */; };
 		77CD624D2C2F2330007B2DB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD624C2C2F2330007B2DB3 /* Preview Assets.xcassets */; };
 		77CD62572C2F2331007B2DB3 /* Food_diaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62562C2F2331007B2DB3 /* Food_diaryTests.swift */; };
 		77CD62612C2F2331007B2DB3 /* Food_diaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62602C2F2331007B2DB3 /* Food_diaryUITests.swift */; };
 		77CD62632C2F2331007B2DB3 /* Food_diaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62622C2F2331007B2DB3 /* Food_diaryUITestsLaunchTests.swift */; };
+		77CD62712C2F24E7007B2DB3 /* FoodEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD626F2C2F24E7007B2DB3 /* FoodEntry+CoreDataClass.swift */; };
+		77CD62722C2F24E7007B2DB3 /* FoodEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62702C2F24E7007B2DB3 /* FoodEntry+CoreDataProperties.swift */; };
+		77CD62762C2F2890007B2DB3 /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62752C2F2890007B2DB3 /* EntriesListView.swift */; };
+		77CD62782C2F2C11007B2DB3 /* DataAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62772C2F2C11007B2DB3 /* DataAnalysisView.swift */; };
+		77CD627A2C2F2D45007B2DB3 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62792C2F2D45007B2DB3 /* ChartView.swift */; };
+		77CD627C2C2F2D87007B2DB3 /* StatisticalTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD627B2C2F2D87007B2DB3 /* StatisticalTesting.swift */; };
+		77CD627E2C2F2EBF007B2DB3 /* EntryInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD627D2C2F2EBF007B2DB3 /* EntryInputView.swift */; };
+		77CD62802C2F304F007B2DB3 /* ViewChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD627F2C2F304F007B2DB3 /* ViewChartsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +44,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		77CD623C2C2F232F007B2DB3 /* Food diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CD623C2C2F232F007B2DB3 /* FoodDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CD623F2C2F232F007B2DB3 /* Food_diaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_diaryApp.swift; sourceTree = "<group>"; };
-		77CD62412C2F232F007B2DB3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		77CD62412C2F232F007B2DB3 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		77CD62442C2F232F007B2DB3 /* Food_diary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Food_diary.xcdatamodel; sourceTree = "<group>"; };
 		77CD62462C2F232F007B2DB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		77CD62482C2F2330007B2DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77CD624A2C2F2330007B2DB3 /* Food_diary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Food_diary.entitlements; sourceTree = "<group>"; };
 		77CD624C2C2F2330007B2DB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		77CD62522C2F2331007B2DB3 /* Food diaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food diaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CD62522C2F2331007B2DB3 /* FoodDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CD62562C2F2331007B2DB3 /* Food_diaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_diaryTests.swift; sourceTree = "<group>"; };
-		77CD625C2C2F2331007B2DB3 /* Food diaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food diaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CD625C2C2F2331007B2DB3 /* FoodDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CD62602C2F2331007B2DB3 /* Food_diaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_diaryUITests.swift; sourceTree = "<group>"; };
 		77CD62622C2F2331007B2DB3 /* Food_diaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_diaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77CD626F2C2F24E7007B2DB3 /* FoodEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77CD62702C2F24E7007B2DB3 /* FoodEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		77CD62752C2F2890007B2DB3 /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
+		77CD62772C2F2C11007B2DB3 /* DataAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAnalysisView.swift; sourceTree = "<group>"; };
+		77CD62792C2F2D45007B2DB3 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		77CD627B2C2F2D87007B2DB3 /* StatisticalTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticalTesting.swift; sourceTree = "<group>"; };
+		77CD627D2C2F2EBF007B2DB3 /* EntryInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryInputView.swift; sourceTree = "<group>"; };
+		77CD627F2C2F304F007B2DB3 /* ViewChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChartsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +95,7 @@
 		77CD62332C2F232F007B2DB3 = {
 			isa = PBXGroup;
 			children = (
-				77CD623E2C2F232F007B2DB3 /* Food diary */,
+				77CD623E2C2F232F007B2DB3 /* FoodDiary */,
 				77CD62552C2F2331007B2DB3 /* Food diaryTests */,
 				77CD625F2C2F2331007B2DB3 /* Food diaryUITests */,
 				77CD623D2C2F232F007B2DB3 /* Products */,
@@ -89,25 +105,33 @@
 		77CD623D2C2F232F007B2DB3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77CD623C2C2F232F007B2DB3 /* Food diary.app */,
-				77CD62522C2F2331007B2DB3 /* Food diaryTests.xctest */,
-				77CD625C2C2F2331007B2DB3 /* Food diaryUITests.xctest */,
+				77CD623C2C2F232F007B2DB3 /* FoodDiary.app */,
+				77CD62522C2F2331007B2DB3 /* FoodDiaryTests.xctest */,
+				77CD625C2C2F2331007B2DB3 /* FoodDiaryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		77CD623E2C2F232F007B2DB3 /* Food diary */ = {
+		77CD623E2C2F232F007B2DB3 /* FoodDiary */ = {
 			isa = PBXGroup;
 			children = (
 				77CD623F2C2F232F007B2DB3 /* Food_diaryApp.swift */,
-				77CD62412C2F232F007B2DB3 /* Persistence.swift */,
 				77CD62462C2F232F007B2DB3 /* ContentView.swift */,
+				77CD62412C2F232F007B2DB3 /* PersistenceController.swift */,
+				77CD62752C2F2890007B2DB3 /* EntriesListView.swift */,
+				77CD62702C2F24E7007B2DB3 /* FoodEntry+CoreDataProperties.swift */,
+				77CD626F2C2F24E7007B2DB3 /* FoodEntry+CoreDataClass.swift */,
+				77CD62772C2F2C11007B2DB3 /* DataAnalysisView.swift */,
+				77CD62792C2F2D45007B2DB3 /* ChartView.swift */,
+				77CD627B2C2F2D87007B2DB3 /* StatisticalTesting.swift */,
+				77CD627D2C2F2EBF007B2DB3 /* EntryInputView.swift */,
+				77CD627F2C2F304F007B2DB3 /* ViewChartsView.swift */,
 				77CD62482C2F2330007B2DB3 /* Assets.xcassets */,
 				77CD624A2C2F2330007B2DB3 /* Food_diary.entitlements */,
-				77CD62432C2F232F007B2DB3 /* Food_diary.xcdatamodeld */,
+				77CD62432C2F232F007B2DB3 /* FoodDiaryModel.xcdatamodeld */,
 				77CD624B2C2F2330007B2DB3 /* Preview Content */,
 			);
-			path = "Food diary";
+			path = FoodDiary;
 			sourceTree = "<group>";
 		};
 		77CD624B2C2F2330007B2DB3 /* Preview Content */ = {
@@ -138,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		77CD623B2C2F232F007B2DB3 /* Food diary */ = {
+		77CD623B2C2F232F007B2DB3 /* FoodDiary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77CD62662C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "Food diary" */;
+			buildConfigurationList = 77CD62662C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "FoodDiary" */;
 			buildPhases = (
 				77CD62382C2F232F007B2DB3 /* Sources */,
 				77CD62392C2F232F007B2DB3 /* Frameworks */,
@@ -150,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = "Food diary";
+			name = FoodDiary;
 			productName = "Food diary";
-			productReference = 77CD623C2C2F232F007B2DB3 /* Food diary.app */;
+			productReference = 77CD623C2C2F232F007B2DB3 /* FoodDiary.app */;
 			productType = "com.apple.product-type.application";
 		};
-		77CD62512C2F2331007B2DB3 /* Food diaryTests */ = {
+		77CD62512C2F2331007B2DB3 /* FoodDiaryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77CD62692C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "Food diaryTests" */;
+			buildConfigurationList = 77CD62692C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "FoodDiaryTests" */;
 			buildPhases = (
 				77CD624E2C2F2331007B2DB3 /* Sources */,
 				77CD624F2C2F2331007B2DB3 /* Frameworks */,
@@ -168,14 +192,14 @@
 			dependencies = (
 				77CD62542C2F2331007B2DB3 /* PBXTargetDependency */,
 			);
-			name = "Food diaryTests";
+			name = FoodDiaryTests;
 			productName = "Food diaryTests";
-			productReference = 77CD62522C2F2331007B2DB3 /* Food diaryTests.xctest */;
+			productReference = 77CD62522C2F2331007B2DB3 /* FoodDiaryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		77CD625B2C2F2331007B2DB3 /* Food diaryUITests */ = {
+		77CD625B2C2F2331007B2DB3 /* FoodDiaryUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77CD626C2C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "Food diaryUITests" */;
+			buildConfigurationList = 77CD626C2C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "FoodDiaryUITests" */;
 			buildPhases = (
 				77CD62582C2F2331007B2DB3 /* Sources */,
 				77CD62592C2F2331007B2DB3 /* Frameworks */,
@@ -186,9 +210,9 @@
 			dependencies = (
 				77CD625E2C2F2331007B2DB3 /* PBXTargetDependency */,
 			);
-			name = "Food diaryUITests";
+			name = FoodDiaryUITests;
 			productName = "Food diaryUITests";
-			productReference = 77CD625C2C2F2331007B2DB3 /* Food diaryUITests.xctest */;
+			productReference = 77CD625C2C2F2331007B2DB3 /* FoodDiaryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +238,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 77CD62372C2F232F007B2DB3 /* Build configuration list for PBXProject "Food diary" */;
+			buildConfigurationList = 77CD62372C2F232F007B2DB3 /* Build configuration list for PBXProject "FoodDiary" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,9 +251,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77CD623B2C2F232F007B2DB3 /* Food diary */,
-				77CD62512C2F2331007B2DB3 /* Food diaryTests */,
-				77CD625B2C2F2331007B2DB3 /* Food diaryUITests */,
+				77CD623B2C2F232F007B2DB3 /* FoodDiary */,
+				77CD62512C2F2331007B2DB3 /* FoodDiaryTests */,
+				77CD625B2C2F2331007B2DB3 /* FoodDiaryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,9 +290,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				77CD62402C2F232F007B2DB3 /* Food_diaryApp.swift in Sources */,
-				77CD62422C2F232F007B2DB3 /* Persistence.swift in Sources */,
+				77CD62762C2F2890007B2DB3 /* EntriesListView.swift in Sources */,
+				77CD62802C2F304F007B2DB3 /* ViewChartsView.swift in Sources */,
+				77CD62782C2F2C11007B2DB3 /* DataAnalysisView.swift in Sources */,
+				77CD62422C2F232F007B2DB3 /* PersistenceController.swift in Sources */,
+				77CD627C2C2F2D87007B2DB3 /* StatisticalTesting.swift in Sources */,
 				77CD62472C2F232F007B2DB3 /* ContentView.swift in Sources */,
-				77CD62452C2F232F007B2DB3 /* Food_diary.xcdatamodeld in Sources */,
+				77CD627A2C2F2D45007B2DB3 /* ChartView.swift in Sources */,
+				77CD627E2C2F2EBF007B2DB3 /* EntryInputView.swift in Sources */,
+				77CD62452C2F232F007B2DB3 /* FoodDiaryModel.xcdatamodeld in Sources */,
+				77CD62712C2F24E7007B2DB3 /* FoodEntry+CoreDataClass.swift in Sources */,
+				77CD62722C2F24E7007B2DB3 /* FoodEntry+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +326,12 @@
 /* Begin PBXTargetDependency section */
 		77CD62542C2F2331007B2DB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 77CD623B2C2F232F007B2DB3 /* Food diary */;
+			target = 77CD623B2C2F232F007B2DB3 /* FoodDiary */;
 			targetProxy = 77CD62532C2F2331007B2DB3 /* PBXContainerItemProxy */;
 		};
 		77CD625E2C2F2331007B2DB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 77CD623B2C2F232F007B2DB3 /* Food diary */;
+			target = 77CD623B2C2F232F007B2DB3 /* FoodDiary */;
 			targetProxy = 77CD625D2C2F2331007B2DB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -448,7 +480,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Mops.Food-diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,7 +517,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Mops.Food-diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,7 +543,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Food diary";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodDiary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FoodDiary";
 			};
 			name = Debug;
 		};
@@ -531,7 +565,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Food diary";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodDiary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FoodDiary";
 			};
 			name = Release;
 		};
@@ -580,7 +614,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		77CD62372C2F232F007B2DB3 /* Build configuration list for PBXProject "Food diary" */ = {
+		77CD62372C2F232F007B2DB3 /* Build configuration list for PBXProject "FoodDiary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77CD62642C2F2331007B2DB3 /* Debug */,
@@ -589,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77CD62662C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "Food diary" */ = {
+		77CD62662C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "FoodDiary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77CD62672C2F2331007B2DB3 /* Debug */,
@@ -598,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77CD62692C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "Food diaryTests" */ = {
+		77CD62692C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "FoodDiaryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77CD626A2C2F2331007B2DB3 /* Debug */,
@@ -607,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77CD626C2C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "Food diaryUITests" */ = {
+		77CD626C2C2F2331007B2DB3 /* Build configuration list for PBXNativeTarget "FoodDiaryUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77CD626D2C2F2331007B2DB3 /* Debug */,
@@ -619,13 +653,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		77CD62432C2F232F007B2DB3 /* Food_diary.xcdatamodeld */ = {
+		77CD62432C2F232F007B2DB3 /* FoodDiaryModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				77CD62442C2F232F007B2DB3 /* Food_diary.xcdatamodel */,
 			);
 			currentVersion = 77CD62442C2F232F007B2DB3 /* Food_diary.xcdatamodel */;
-			path = Food_diary.xcdatamodeld;
+			path = FoodDiaryModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
