@@ -9,13 +9,9 @@
 /* Begin PBXBuildFile section */
 		77CD62402C2F232F007B2DB3 /* Food_diaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD623F2C2F232F007B2DB3 /* Food_diaryApp.swift */; };
 		77CD62422C2F232F007B2DB3 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62412C2F232F007B2DB3 /* PersistenceController.swift */; };
-		77CD62452C2F232F007B2DB3 /* FoodDiaryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62432C2F232F007B2DB3 /* FoodDiaryModel.xcdatamodeld */; };
 		77CD62472C2F232F007B2DB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62462C2F232F007B2DB3 /* ContentView.swift */; };
 		77CD62492C2F2330007B2DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD62482C2F2330007B2DB3 /* Assets.xcassets */; };
 		77CD624D2C2F2330007B2DB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD624C2C2F2330007B2DB3 /* Preview Assets.xcassets */; };
-		77CD62572C2F2331007B2DB3 /* Food_diaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62562C2F2331007B2DB3 /* Food_diaryTests.swift */; };
-		77CD62612C2F2331007B2DB3 /* Food_diaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62602C2F2331007B2DB3 /* Food_diaryUITests.swift */; };
-		77CD62632C2F2331007B2DB3 /* Food_diaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62622C2F2331007B2DB3 /* Food_diaryUITestsLaunchTests.swift */; };
 		77CD62712C2F24E7007B2DB3 /* FoodEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD626F2C2F24E7007B2DB3 /* FoodEntry+CoreDataClass.swift */; };
 		77CD62722C2F24E7007B2DB3 /* FoodEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62702C2F24E7007B2DB3 /* FoodEntry+CoreDataProperties.swift */; };
 		77CD62762C2F2890007B2DB3 /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62752C2F2890007B2DB3 /* EntriesListView.swift */; };
@@ -24,6 +20,19 @@
 		77CD627C2C2F2D87007B2DB3 /* StatisticalTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD627B2C2F2D87007B2DB3 /* StatisticalTesting.swift */; };
 		77CD627E2C2F2EBF007B2DB3 /* EntryInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD627D2C2F2EBF007B2DB3 /* EntryInputView.swift */; };
 		77CD62802C2F304F007B2DB3 /* ViewChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD627F2C2F304F007B2DB3 /* ViewChartsView.swift */; };
+		77CD628D2C3021BF007B2DB3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CD628C2C3021BF007B2DB3 /* XCTest.framework */; };
+		77CD628E2C3021C7007B2DB3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CD628C2C3021BF007B2DB3 /* XCTest.framework */; };
+		77CD62A02C3023F4007B2DB3 /* Food_diaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62832C302098007B2DB3 /* Food_diaryTests.swift */; };
+		77CD62BB2C302413007B2DB3 /* Food_diaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62852C302098007B2DB3 /* Food_diaryUITests.swift */; };
+		77CD62BC2C302413007B2DB3 /* Food_diaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62862C302098007B2DB3 /* Food_diaryUITestsLaunchTests.swift */; };
+		77CD62CD2C302430007B2DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD62482C2F2330007B2DB3 /* Assets.xcassets */; };
+		77CD62CE2C302430007B2DB3 /* Food_diary.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 77CD624A2C2F2330007B2DB3 /* Food_diary.entitlements */; };
+		77CD62D02C302430007B2DB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD624C2C2F2330007B2DB3 /* Preview Assets.xcassets */; };
+		77CD62E32C30243E007B2DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD62482C2F2330007B2DB3 /* Assets.xcassets */; };
+		77CD62E42C30243E007B2DB3 /* Food_diary.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 77CD624A2C2F2330007B2DB3 /* Food_diary.entitlements */; };
+		77CD62E62C30243E007B2DB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CD624C2C2F2330007B2DB3 /* Preview Assets.xcassets */; };
+		77CD62F92C30244A007B2DB3 /* Food_diary.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 77CD624A2C2F2330007B2DB3 /* Food_diary.entitlements */; };
+		77CD63022C3028DE007B2DB3 /* FoodDiaryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77CD62432C2F232F007B2DB3 /* FoodDiaryModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +62,7 @@
 		77CD624A2C2F2330007B2DB3 /* Food_diary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Food_diary.entitlements; sourceTree = "<group>"; };
 		77CD624C2C2F2330007B2DB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		77CD62522C2F2331007B2DB3 /* FoodDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		77CD62562C2F2331007B2DB3 /* Food_diaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_diaryTests.swift; sourceTree = "<group>"; };
 		77CD625C2C2F2331007B2DB3 /* FoodDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		77CD62602C2F2331007B2DB3 /* Food_diaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_diaryUITests.swift; sourceTree = "<group>"; };
-		77CD62622C2F2331007B2DB3 /* Food_diaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_diaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		77CD626F2C2F24E7007B2DB3 /* FoodEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
 		77CD62702C2F24E7007B2DB3 /* FoodEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		77CD62752C2F2890007B2DB3 /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
@@ -65,6 +71,10 @@
 		77CD627B2C2F2D87007B2DB3 /* StatisticalTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticalTesting.swift; sourceTree = "<group>"; };
 		77CD627D2C2F2EBF007B2DB3 /* EntryInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryInputView.swift; sourceTree = "<group>"; };
 		77CD627F2C2F304F007B2DB3 /* ViewChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChartsView.swift; sourceTree = "<group>"; };
+		77CD62832C302098007B2DB3 /* Food_diaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food_diaryTests.swift; sourceTree = "<group>"; };
+		77CD62852C302098007B2DB3 /* Food_diaryUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food_diaryUITests.swift; sourceTree = "<group>"; };
+		77CD62862C302098007B2DB3 /* Food_diaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food_diaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77CD628C2C3021BF007B2DB3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CD628D2C3021BF007B2DB3 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CD628E2C3021C7007B2DB3 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				77CD623E2C2F232F007B2DB3 /* FoodDiary */,
-				77CD62552C2F2331007B2DB3 /* Food diaryTests */,
-				77CD625F2C2F2331007B2DB3 /* Food diaryUITests */,
+				77CD62872C302098007B2DB3 /* FoodDiaryUITests */,
+				77CD62842C302098007B2DB3 /* FoodDiaryTests */,
 				77CD623D2C2F232F007B2DB3 /* Products */,
+				77CD628B2C3021BF007B2DB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,21 +155,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		77CD62552C2F2331007B2DB3 /* Food diaryTests */ = {
+		77CD62842C302098007B2DB3 /* FoodDiaryTests */ = {
 			isa = PBXGroup;
 			children = (
-				77CD62562C2F2331007B2DB3 /* Food_diaryTests.swift */,
+				77CD62832C302098007B2DB3 /* Food_diaryTests.swift */,
 			);
-			path = "Food diaryTests";
+			path = FoodDiaryTests;
 			sourceTree = "<group>";
 		};
-		77CD625F2C2F2331007B2DB3 /* Food diaryUITests */ = {
+		77CD62872C302098007B2DB3 /* FoodDiaryUITests */ = {
 			isa = PBXGroup;
 			children = (
-				77CD62602C2F2331007B2DB3 /* Food_diaryUITests.swift */,
-				77CD62622C2F2331007B2DB3 /* Food_diaryUITestsLaunchTests.swift */,
+				77CD62852C302098007B2DB3 /* Food_diaryUITests.swift */,
+				77CD62862C302098007B2DB3 /* Food_diaryUITestsLaunchTests.swift */,
 			);
-			path = "Food diaryUITests";
+			path = FoodDiaryUITests;
+			sourceTree = "<group>";
+		};
+		77CD628B2C3021BF007B2DB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77CD628C2C3021BF007B2DB3 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CD62F92C30244A007B2DB3 /* Food_diary.entitlements in Resources */,
 				77CD624D2C2F2330007B2DB3 /* Preview Assets.xcassets in Resources */,
 				77CD62492C2F2330007B2DB3 /* Assets.xcassets in Resources */,
 			);
@@ -272,6 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CD62E32C30243E007B2DB3 /* Assets.xcassets in Resources */,
+				77CD62E42C30243E007B2DB3 /* Food_diary.entitlements in Resources */,
+				77CD62E62C30243E007B2DB3 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +304,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CD62CD2C302430007B2DB3 /* Assets.xcassets in Resources */,
+				77CD62CE2C302430007B2DB3 /* Food_diary.entitlements in Resources */,
+				77CD62D02C302430007B2DB3 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CD63022C3028DE007B2DB3 /* FoodDiaryModel.xcdatamodeld in Sources */,
 				77CD62402C2F232F007B2DB3 /* Food_diaryApp.swift in Sources */,
 				77CD62762C2F2890007B2DB3 /* EntriesListView.swift in Sources */,
 				77CD62802C2F304F007B2DB3 /* ViewChartsView.swift in Sources */,
@@ -298,7 +327,6 @@
 				77CD62472C2F232F007B2DB3 /* ContentView.swift in Sources */,
 				77CD627A2C2F2D45007B2DB3 /* ChartView.swift in Sources */,
 				77CD627E2C2F2EBF007B2DB3 /* EntryInputView.swift in Sources */,
-				77CD62452C2F232F007B2DB3 /* FoodDiaryModel.xcdatamodeld in Sources */,
 				77CD62712C2F24E7007B2DB3 /* FoodEntry+CoreDataClass.swift in Sources */,
 				77CD62722C2F24E7007B2DB3 /* FoodEntry+CoreDataProperties.swift in Sources */,
 			);
@@ -308,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77CD62572C2F2331007B2DB3 /* Food_diaryTests.swift in Sources */,
+				77CD62A02C3023F4007B2DB3 /* Food_diaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +344,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77CD62632C2F2331007B2DB3 /* Food_diaryUITestsLaunchTests.swift in Sources */,
-				77CD62612C2F2331007B2DB3 /* Food_diaryUITests.swift in Sources */,
+				77CD62BB2C302413007B2DB3 /* Food_diaryUITests.swift in Sources */,
+				77CD62BC2C302413007B2DB3 /* Food_diaryUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,10 +484,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Food diary/Food_diary.entitlements";
+				CODE_SIGN_ENTITLEMENTS = FoodDiary/Food_diary.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Food diary/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -493,10 +521,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Food diary/Food_diary.entitlements";
+				CODE_SIGN_ENTITLEMENTS = FoodDiary/Food_diary.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Food diary/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -530,8 +558,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = FoodDiary/Food_diary.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -554,6 +584,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/Developer/Library/Frameworks";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -573,8 +604,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = FoodDiary/Food_diary.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -596,6 +629,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/Developer/Library/Frameworks";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
