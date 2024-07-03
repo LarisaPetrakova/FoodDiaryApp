@@ -2,10 +2,15 @@ import SwiftUI
 
 struct EntryInputView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    
     @State private var food: String = ""
     @State private var symptoms: String = ""
+    @State private var date: Date = Date()
+    @State private var time: Date = Date()
     @State private var showSaveIndicator = false
-    
+
+    var entry: FoodEntry?
+
     var body: some View {
         VStack {
             TextField("Enter food", text: $food)
@@ -16,8 +21,14 @@ struct EntryInputView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
+            DatePicker("Select date", selection: $date, displayedComponents: .date)
+                .padding()
+            
+            DatePicker("Select time", selection: $time, displayedComponents: .hourAndMinute)
+                .padding()
+            
             Button(action: saveEntry) {
-                Text("Save Entry")
+                Text(entry == nil ? "Save Entry" : "Update Entry")
                     .font(.title2)
                     .padding()
                     .background(Color.blue)
@@ -32,14 +43,23 @@ struct EntryInputView: View {
                     .padding()
             }
         }
-        .navigationBarTitle("New Entry", displayMode: .inline)
+        .navigationBarTitle(entry == nil ? "New Entry" : "Edit Entry", displayMode: .inline)
+        .onAppear {
+            if let entry = entry {
+                food = entry.food ?? ""
+                symptoms = entry.symptoms ?? ""
+                date = entry.date ?? Date()
+                time = entry.time ?? Date()
+            }
+        }
     }
     
     private func saveEntry() {
-        let newEntry = FoodEntry(context: viewContext)
-        newEntry.food = food
-        newEntry.symptoms = symptoms
-        newEntry.date = Date()
+        let entryToSave = entry ?? FoodEntry(context: viewContext)
+        entryToSave.food = food
+        entryToSave.symptoms = symptoms
+        entryToSave.date = date
+        entryToSave.time = time
         
         do {
             try viewContext.save()
@@ -47,8 +67,10 @@ struct EntryInputView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 showSaveIndicator = false
             }
-            food = ""
-            symptoms = ""
+            if entry == nil {
+                food = ""
+                symptoms = ""
+            }
         } catch {
             print("Failed to save entry: \(error.localizedDescription)")
         }

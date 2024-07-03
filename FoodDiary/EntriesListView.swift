@@ -7,6 +7,8 @@ struct EntriesListView: View {
         animation: .default)
     private var entries: FetchedResults<FoodEntry>
     
+    @Environment(\.managedObjectContext) private var viewContext
+
     var body: some View {
         List {
             ForEach(entries) { entry in
@@ -15,10 +17,27 @@ struct EntriesListView: View {
                     Text("Time: \(entry.time ?? Date(), formatter: timeFormatter)")
                     Text("Food: \(entry.food ?? "")")
                     Text("Symptoms: \(entry.symptoms ?? "")")
+                    NavigationLink(destination: EntryInputView(entry: entry)) {
+                        Text("Edit")
+                            .foregroundColor(.blue)
+                    }
                 }
             }
+            .onDelete(perform: deleteEntries)
         }
         .navigationBarTitle("Food Diary Entries")
+        .navigationBarItems(trailing: EditButton())
+    }
+
+    private func deleteEntries(offsets: IndexSet) {
+        withAnimation {
+            offsets.map { entries[$0] }.forEach(viewContext.delete)
+            do {
+                try viewContext.save()
+            } catch {
+                print("Failed to delete entry: \(error.localizedDescription)")
+            }
+        }
     }
 }
 
