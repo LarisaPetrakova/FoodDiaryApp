@@ -1,4 +1,5 @@
 import SwiftUI
+import CoreData
 
 struct EntryInputView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -8,18 +9,56 @@ struct EntryInputView: View {
     @State private var date: Date = Date()
     @State private var time: Date = Date()
     @State private var showSaveIndicator = false
-
+    @State private var foodSuggestions: [String] = []
+    @State private var symptomSuggestions: [String] = []
+    
     var entry: FoodEntry?
 
     var body: some View {
         VStack {
-            TextField("Enter food", text: $food)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            
-            TextField("Enter symptoms", text: $symptoms)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            TextField("Enter food", text: $food, onEditingChanged: { isEditing in
+                if isEditing {
+                    fetchFoodSuggestions()
+                }
+            })
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding()
+            .onChange(of: food) { _ in
+                fetchFoodSuggestions()
+            }
+
+            if !foodSuggestions.isEmpty {
+                List(foodSuggestions, id: \.self) { suggestion in
+                    Text(suggestion)
+                        .onTapGesture {
+                            food = suggestion
+                            foodSuggestions = []
+                        }
+                }
+                .frame(height: 100)
+            }
+
+            TextField("Enter symptoms", text: $symptoms, onEditingChanged: { isEditing in
+                if isEditing {
+                    fetchSymptomSuggestions()
+                }
+            })
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding()
+            .onChange(of: symptoms) { _ in
+                fetchSymptomSuggestions()
+            }
+
+            if !symptomSuggestions.isEmpty {
+                List(symptomSuggestions, id: \.self) { suggestion in
+                    Text(suggestion)
+                        .onTapGesture {
+                            symptoms = suggestion
+                            symptomSuggestions = []
+                        }
+                }
+                .frame(height: 100)
+            }
             
             DatePicker("Select date", selection: $date, displayedComponents: .date)
                 .padding()
@@ -73,6 +112,34 @@ struct EntryInputView: View {
             }
         } catch {
             print("Failed to save entry: \(error.localizedDescription)")
+        }
+    }
+    
+    private func fetchFoodSuggestions() {
+        let request: NSFetchRequest<FoodEntry> = FoodEntry.fetchRequest()
+        request.predicate = NSPredicate(format: "food CONTAINS[cd] %@", food)
+        request.sortDescriptors = [NSSortDescriptor(keyPath: \FoodEntry.food, ascending: true)]
+        request.returnsDistinctResults = true
+
+        do {
+            let results = try viewContext.fetch(request)
+            foodSuggestions = Array(Set(results.compactMap { $0.food })).sorted()
+        } catch {
+            print("Failed to fetch food suggestions: \(error.localizedDescription)")
+        }
+    }
+
+    private func fetchSymptomSuggestions() {
+        let request: NSFetchRequest<FoodEntry> = FoodEntry.fetchRequest()
+        request.predicate = NSPredicate(format: "symptoms CONTAINS[cd] %@", symptoms)
+        request.sortDescriptors = [NSSortDescriptor(keyPath: \FoodEntry.symptoms, ascending: true)]
+        request.returnsDistinctResults = true
+
+        do {
+            let results = try viewContext.fetch(request)
+            symptomSuggestions = Array(Set(results.compactMap { $0.symptoms })).sorted()
+        } catch {
+            print("Failed to fetch symptom suggestions: \(error.localizedDescription)")
         }
     }
 }
